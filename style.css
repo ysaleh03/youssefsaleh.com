@@ -1,6 +1,14 @@
 :root {
     --text: #1e1e1e;
-    --bg: #fff;
+    --bg: #d5d0ca;
+}
+
+h1 {
+    font-family: lores-21-serif, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    margin:30px;
 }
 
 body {
@@ -13,14 +21,14 @@ body {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text: #fff;
+        --text: #d5d0ca;
         --bg: #1e1e1e;
     }
 }
 
 a {
-    display: inline-block; /* Ensures the transform effect works correctly */
-    transition: transform 0.2s ease; /* Smooth transition */
+    display: inline-block;
+    transition: transform 0.2s ease;
 }
 
 a:link {
@@ -34,5 +42,15 @@ a:visited {
 }
 
 a:hover {
-    transform: translateY(-1px); /* Moves the link up by 2 pixels */
+    transform: translateY(-1px);
+}
+
+p {
+    text-align: start;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+p + p {
+    margin-top: 10px;
 }
