@@ -3,22 +3,21 @@
     --bg: #d5d0ca;
 }
 
-body {
-    font-family: monospace;
-    background-color: var(--bg);
-    color: var(--text);
-    margin: 30px;
-    text-align: center;
-}
-
 h1 {
     font-family: lores-21-serif, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: clamp(20px, 15vw, 80px);
     margin:30px;
-    max-width:80vw;
     overflow: scroll;
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 30px;
+    text-align: center;
 }
 
 @media (prefers-color-scheme: dark) {
