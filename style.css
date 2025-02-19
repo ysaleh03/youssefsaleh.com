@@ -1,56 +1,92 @@
 :root {
-    --text: #1e1e1e;
-    --bg: #d5d0ca;
-}
-
-h1 {
-    font-family: lores-21-serif, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: clamp(20px, 15vw, 80px);
-    margin: 30px auto;
+  --text: #111;
+  --link: #00d;
+  --bg: #fff;
 }
 
 body {
-    font-family: monospace;
-    background-color: var(--bg);
-    color: var(--text);
-    margin: 30px;
-    text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 2em;
+}
+
+header {
+  display: flex;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em 0;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 2em;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+  }
+}
+
+header h1 {
+  font-family: lores-21-serif, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --text: #d5d0ca;
-        --bg: #1e1e1e;
-    }
+  :root {
+    --text: #fff;
+    --link: #7cf;
+    --bg: #111;
+  }
 }
 
 a {
-    display: inline-block;
-    transition: transform 0.2s ease;
+  text-decoration: inherit;
 }
 
-a:link {
-    text-decoration: inherit;
-    color: inherit;
-}
-
+a:link,
 a:visited {
-    text-decoration: inherit;
-    color: inherit;
+  color: var(--link);
 }
 
-a:hover {
-    transform: translateY(-1px);
+header a header a:link,
+header a:visited {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  color: inherit;
+}
+
+header a:hover {
+  transform: translateY(-1px);
 }
 
 p {
-    text-align: start;
-    max-width: 600px;
-    margin: 0 auto;
+  text-align: start;
 }
 
-p + p {
-    margin-top: 10px;
+p+p {
+  margin-top: 10px;
 }
