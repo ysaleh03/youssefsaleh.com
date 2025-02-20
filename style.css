@@ -1,6 +1,6 @@
 :root {
   --text: #111;
-  --link: #00d;
+  --link: #03d;
   --bg: #fff;
 }
 
@@ -10,24 +10,36 @@ body {
   background-color: var(--bg);
   color: var(--text);
   margin: 0 auto;
+  padding: 0 2em;
   max-width: 750px;
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
   display: flex;
-  column-gap: 15px;
+  column-gap: 1em;
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
   width: 100%;
-  padding: 1em 0;
+  padding: 2em 0 1em 0;
 }
 
 footer {
   display: flex;
-  position: fixed;
-  bottom: 2em;
+  flex-direction: column;
+  column-gap: 1em;
+  row-gap: 1em;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1em 0 2em 0;
+  margin-top: auto;
+  text-align: center;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -88,5 +100,17 @@ p {
 }
 
 p+p {
-  margin-top: 10px;
+  margin-top: 1em;
+}
+
+ul {
+  padding-left: 2em;
+}
+
+.copyleft-circle {
+  stroke: var(--text);
+}
+
+.copyleft-path {
+  fill: var(--text);
 }
