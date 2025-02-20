@@ -84,7 +84,8 @@ a:visited {
   color: var(--link);
 }
 
-header a header a:link,
+header a,
+header a:link,
 header a:visited {
   display: inline-block;
   transition: transform 0.2s ease;
