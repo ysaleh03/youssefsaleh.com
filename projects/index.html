@@ -43,44 +43,85 @@
     <nav>
       <a href="..">home</a>
       <a href="../about">about</a>
+      <a href="../research">research</a>
       <a href="../projects">projects</a>
-      <a href="https://www.students.cs.ubc.ca/~ysaleh03">ubc</a>
       <a style="cursor:not-allowed">blog</a>
       <a href="../links">links</a>
     </nav>
   </header>
   <main>
     <p>
-      This page contains a selection of projects I have worked on.
-      For a more complete list, check out my <a href="https://github.com/ysaleh03">GitHub page</a>.
+      This page contains a selection of projects I have either worked on (or am currently working on).
+      Not every project is listed here! Some are only on <a href="https://github.com/ysaleh03">GitHub</a>.
     </p>
-    <h3 id="deflog">Deflog</h3>
-    <p style="margin: 0;">
+    <div id="viper-ish"
+      style="width: 100%; display: inline-flex; justify-content: space-between; align-items: baseline; gap: 1em">
+      <h4 style="margin: 0;">Viper-ish Verifier</h4>
+      <p style="margin: 0;">Scala, SMT, Z3</p>
+    </div>
+    <p>
+      A weakest-precondition-based modular program verifier for a subset of the Viper language. Supports pre- and
+      postconditons on functions, mutable variables, control flow, domain axioms and assert/assume statements.
+    </p>
+    <div id="sat-solver"
+      style="width: 100%; display: inline-flex; justify-content: space-between; align-items: baseline; gap: 1em">
+      <h4 style="margin: 0;">Generalized SAT Solver</h4>
+      <p style="margin: 0;">Scala, SMT</p>
+    </div>
+    <p>
+      A customizable SAT Solver built in Scala with support for both DPLL and CDCL search algorithms. Offers the option
+      to toggle back-jumping, clause learning and the pure literal rule.
+    </p>
+    <div id="racket-ish"
+      style="width: 100%; display: inline-flex; justify-content: space-between; align-items: baseline; gap: 1em">
+      <h4 style="margin: 0;">Racket-ish Compiler</h4>
+      <p style="margin: 0;">Racket</p>
+    </div>
+    <p>
+      A multi-pass compiler for a subset of the Racket language. Supports first-class
+      procedures, macro expansion and dynamic type checking.
+    </p>
+    <div id="deflog"
+      style="width: 100%; display: inline-flex; justify-content: space-between; align-items: baseline; gap: 1em">
+      <h4 style="margin: 0;">Deflog</h4>
+      <p style="margin: 0;">Prolog, Pyton</p>
+    </div>
+    <p>
       A Prolog English dictionary prototype. Uses <a href="https://en.wikipedia.org/wiki/Trie">tries</a> for
       quick lookup and autocomplete predictions.
       <a href="https://github.com/ysaleh03/deflog">Source code</a>.
     </p>
-    <div style="display: flex; align-items: baseline; column-gap: 10px; margin: 0;">
-      <h3 id="ecosystem-simulator">Ecosystem Simulator</h3>
-      <img src="../images/projects/foxicon.png" alt="pixelated fox icon" style="width: 1em;">
+    <div style="width: 100%; display: inline-flex; justify-content: space-between; align-items: baseline; gap: 1em">
+      <div style="display: flex; align-items: baseline; column-gap: 10px; margin: 0;">
+        <h4 id="ecosystem-simulator" style="margin: 0;">Ecosystem Simulator</h4>
+        <img src="../images/projects/foxicon.png" alt="pixelated fox icon" style="width: 1em;">
+      </div>
+      <p style="margin: 0;">Haskell</p>
     </div>
-    <p style="margin: 0;">
+    <p>
       A genetic algorithm visualizer developed in Haskell.
       Simulates emergent behaviour in a simplified ecosystem including overhunting and overgrazing.
       <a href="https://github.com/ysaleh03/ecosystem-simulator">Source code</a>.
     </p>
-    <h3 id="fivesquared">FiveSquared</h3>
-    <p style="margin: 0;">
+    <div id="fivesquared"
+      style="width: 100%; display: inline-flex; justify-content: space-between; align-items: baseline; gap: 1em">
+      <h4 style="margin: 0;">FiveSquared</h4>
+      <p style="margin: 0;">JavaScript, OracleDB</p>
+    </div>
+    <p>
       A full-stack "social media platform" for art enthusiasts.
       Uses a relational database backend to track accounts, posts, likes and comments.
       Dynamically generated SQL queries allow users to do advanced search.
       <a href="https://github.com/kewbish/fivesquared">Source code</a>.
     </p>
-    <div style="display: flex; align-items: baseline; column-gap: 10px; margin: 0;">
-      <h3 id="inclusion-bot">Inclusion Bot</h3>
-      <img src="../images/projects/noh8.png" alt="pixelated no-h8 icon" style="width: 1em;">
+    <div style="width: 100%; display: inline-flex; justify-content: space-between; align-items: baseline; gap: 1em">
+      <div style="display: flex; align-items: baseline; column-gap: 10px; margin: 0;">
+        <h4 id="inclusion-bot" style="margin: 0;">Inclusion Bot</h4>
+        <img src="../images/projects/noh8.png" alt="pixelated no-h8 icon" style="width: 1em;">
+      </div>
+      <p style="margin: 0;">JavaScript, Discord</p>
     </div>
-    <p style="margin: 0;">
+    <p>
       A Discord bot and text analysis tool for detecting hate speech.
       Detects and deletes offensive messages and messages author with detailed breakdown and confidence.
       Created for HackCamp 2023.
